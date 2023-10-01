@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    min-height: 90%;
+    min-width: 90%;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column-reverse;
+}
+.top{
+    flex: .5;
+    background: #2F3C7E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.alphabet{
+    flex: 1;
+    background-color: rgba(128, 92, 0, 0.259);    
+    display: flex;
+    border-top: 2px solid white;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.char{
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.char:hover{
+    color: blue;
+}
+
+.guess{
+    flex: 2;
+    background-color:  rgba(128, 92, 0, 0.259);
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border-top: 2px solid white;
+}
+
+.guessed-alphabet{
+    border-bottom: 2px solid black;
+    width: 50px;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.lives{
+    background: #2F3C7E;
+    flex: .5;
+    display: flex;
+    border-top: 2px solid white;
+    justify-content: center;
+    align-items: center;
+}
+
+.lives p{
+    color: white;
+    font-size: 18px;
+}
+
+.lives span{
+    color: rgba(255, 0, 0, 0.648);
+}
+
+#play-again{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#play-again button{
+    padding: 10px;
+    background-color: rgb(128, 226, 128);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#Mini-project{
+    color: gray;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 15px;
+}
